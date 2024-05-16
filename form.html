@@ -214,29 +214,11 @@ p.one {
     function showAlert() {
         alert('Button clicked!');
     }
-    function showPopup(event) {
-    event.preventDefault(); // Prevent the default form submission
-    var popup = document.getElementById("popupMessage");
-    popup.style.display = "block";
-}
-
-function closePopup() {
-    var popup = document.getElementById("popupMessage");
-    popup.style.display = "none";
-    // Optionally, you can also clear the form fields here
-    document.getElementById("myForm").reset();
-}
-
-// Close the popup if the user clicks anywhere outside of the popup content
-window.onclick = function(event) {
-    var popup = document.getElementById("popupMessage");
-    if (event.target == popup) {
-        popup.style.display = "none";
-    }
-}
-
+    
 </script>
 
   </div>
 </body>
 </html>
+
+
